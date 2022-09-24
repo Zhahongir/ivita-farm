@@ -1,0 +1,180 @@
+.contacts {
+    position: relative;
+    padding-top: 100px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        &__content {
+            width: 468px;
+            @include title;
+            &__subtitle {
+                font-size: 22px;
+                font-weight: 400;
+                @include blue-text;
+                margin-top: 15px;
+            }
+            &__date {
+                margin-top: 50px;
+                &__item {
+                    width: auto;
+                    &:not(:last-child) {
+                        margin-bottom: 25px;
+                    }
+                    &__link {
+                        display: inline-flex;
+                        align-items: center;
+                        width: auto;
+                        &:hover .contacts__wrap__content__date__item__link__text {
+                            @include blue;
+                        }
+                        &__icon {
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 100%;
+                            border: 1px solid #2E85FF;
+                            position: relative;
+                            margin-right: 15px;
+                            &__phone {
+                                width: 18px;
+                                height: 18px;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            &__email {
+                                width: 18px;
+                                height: 15px;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        &__text {
+                            font-size: 28px;
+                            font-weight: 500;
+                            @include blue-title;
+                            transition: 0.3s ease;
+                        }
+                    }
+                }
+            }
+            &__messages {
+                position: relative;
+                &__title {
+                    margin-top: 45px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    @include blue-text;
+                }
+                &__list {
+                    margin-top: 20px;
+                    &__item {
+                        &:not(:last-child) {
+                            margin-bottom: 25px;
+                        }
+                        &__link {
+                            display: flex;
+                            align-items: center;
+                            &:hover .contacts__wrap__content__messages__list__item__link__text {
+                                @include blue;
+                            }
+                            &__icon {
+                                width: 42px;
+                                height: 42px;
+                                margin-right: 15px;
+                            }
+                            &__text {
+                                font-size: 28px;
+                                font-weight: 500;
+                                @include blue-title;
+                                transition: 0.3s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__lead {
+            width: 609px;
+            border-radius: 40px;
+            background-color: #2E85FF;
+            padding: 45px 32px 40px 32px;
+            &__title {
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            &__form {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &__item {
+                    width: 100%;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    padding: 15px 25px;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include blue-text;
+                    &::placeholder {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #BDBDBD;
+                    }
+                    &:focus {
+                        outline: 2px solid #324B72;
+                    }
+                }
+                &__check {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 25px;
+                    &__checkbox {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        &:checked {
+                            outline: 1px solid rgba(255, 255, 255, 0.347);
+                        }
+                    }
+                    &__label {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        a {
+                            color: #000;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &__btn {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background-color: #131313;
+                    width: 238px;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 100px;
+                    margin-top: 30px;
+                    border: none;
+                    transition: 0.3s ease;
+                    &:hover {
+                        box-shadow: 0px 0px 20px rgba(19, 19, 19, 0.15);
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}

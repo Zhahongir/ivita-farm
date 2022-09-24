@@ -1,0 +1,107 @@
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header__wrap__content__hamburger {
+        display: block;
+        margin-left: 30px;
+    }
+
+    .header__wrap__content__nav {
+        display: none;
+    }
+
+    .promo__wrap__content__title {
+        font-size: 30px;
+    }
+
+    .container-bg {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .promo__wrap__content {
+        width: 460px;
+    }
+
+    .title {
+        font-size: 24px !important;
+    }
+
+    .about__wrap .title {
+        width: 350px;
+    }
+
+    .advantages__wrap .title {
+        width: 350px;
+    }
+
+    .advantages__wrap__content {
+        width: 550px;
+    }
+
+    .advantages__wrap__content__list__item__number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .advantages__wrap__content__list__item__number__text {
+        font-size: 20px;
+    }
+
+    .character__wrap__left .title {
+        width: 350px;
+    }
+
+    .character__wrap__left__image {
+        width: 350px;
+        height: 385px;
+    }
+
+    .compound__wrap__title {
+        font-size: 24px;
+    }
+
+    .contacts__wrap__content {
+        width: 350px;
+    }
+
+    .contacts__wrap__content .title {
+        width: 350px;
+    }
+
+    .contacts__wrap__lead {
+        width: 580px;
+    }
+
+    .contacts__wrap__content__subtitle {
+        font-size: 18px;
+    }
+
+    .contacts__wrap__content__date__item__link__text {
+        font-size: 24px;
+    }
+
+    .contacts__wrap__content__messages__list__item__link__text {
+        font-size: 24px;
+    }
+
+    .footer__wrap__left {
+        width: 430px;
+    }
+
+    .footer__wrap__right {
+        width: 465px;
+    }
+
+    .footer__wrap__right__contacts__phone {
+        font-size: 20px;
+    }
+
+    .footer__wrap__right__contacts__email {
+        font-size: 20px;
+    }
+}

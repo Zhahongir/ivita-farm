@@ -1,0 +1,49 @@
+.character {
+    padding-top: 100px;
+    position: relative;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        &__left {
+            @include title;
+            &__image {
+                width: 468px;
+                height: 515px;
+                margin-top: 32px;
+            }
+        }
+        &__content {
+            width: 577px;
+            &__title {
+                font-size: 18px;
+                font-weight: 500;
+                @include blue-title;
+                span {
+                    font-weight: 600;
+                    @include blue;
+                }
+            }
+            &__list {
+                margin-top: 40px;
+                &__item {
+                    display: flex;
+                    align-items: flex-start;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                    &__icon {
+                        width: 22px;
+                        height: 21px;
+                        margin-right: 8px;
+                    }
+                    &__text {
+                        font-size: 18px;
+                        font-weight: 400;
+                        @include blue-text;
+                        width: 547px;
+                    }
+                }
+            }
+        }
+    }
+}

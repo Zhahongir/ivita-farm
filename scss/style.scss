@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.container-bg {
+    background-color: #F5F8FB;
+    border-radius: 50px
+}
+
+// Blocks
+@import '../scss/mixins';
+@import '../scss/fonts';
+
+@import '../scss/blocks/header';
+@import '../scss/blocks/promo';
+@import '../scss/blocks/about';
+@import '../scss/blocks/advantages';
+@import '../scss/blocks/character';
+@import '../scss/blocks/compound';
+@import '../scss/blocks/contacts';
+@import '../scss/blocks/footer';
+@import '../scss/blocks/modals';
+
+
+// Responsive
+@import '../scss/responsive/1199px';
+@import '../scss/responsive/991px';
+@import '../scss/responsive/767px';
+@import '../scss/responsive/575px';

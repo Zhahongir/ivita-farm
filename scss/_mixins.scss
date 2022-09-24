@@ -1,0 +1,30 @@
+@mixin blue {
+    color: #2E85FF;
+}
+
+@mixin blue-title {
+    color: #112950;
+}
+
+@mixin blue-text {
+    color: #324B72;
+}
+
+@mixin bg {
+    background-color: #F5F8FB;
+}
+
+@mixin gray {
+    color: #E0E6ED;
+}
+
+@mixin title {
+    .title {
+        font-size: 28px;
+        font-weight: 500;
+        color: #112950;
+        text-transform: uppercase;
+        width: 468px;
+    }
+}
+
